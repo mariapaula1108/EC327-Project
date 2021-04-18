@@ -20,8 +20,9 @@ int main() {
 
   while (window.isOpen()) {
     window.clear();
+    //RANDOM GENERATOR//
     shape.setPosition(80,40);
-
+    //USER INPUT//
     window.draw(shape);
 
     window.display();
