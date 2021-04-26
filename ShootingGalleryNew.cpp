@@ -66,7 +66,7 @@ int menu(sf::RenderWindow &field) {
     }
   } 
     
-  if (Mx > 535 && Mx < 715 && My > 425 && My < 595){
+  if (Mx > 535 && Mx < 715 && My > 425 && My < 495){
     if (sf::Mouse::isButtonPressed(sf::Mouse::Left) == 1) {
       int level = 9;
       cout << "Hard" << endl;
@@ -144,7 +144,7 @@ int main() {
   Easy.setFillColor(sf::Color::Transparent);
   Intermediate.setFillColor(sf::Color::Transparent);
   Hard.setFillColor(sf::Color::Transparent);
-  Exit.setFillColor(sf::Color::Transparent);
+  Exit.setFillColor(sf::Color::White);
   Restart.setFillColor(sf::Color::Transparent);
 
 
@@ -161,14 +161,14 @@ int main() {
   hundred.setString("");
   easy_word.setFont(font);
   easy_word.setString("EASY");
-  easy_word.setFillColor(sf::Color(40, 181, 56));
+  easy_word.setFillColor(sf::Color::Black);
   intermediate_word.setFont(font);
   intermediate_word.setCharacterSize(19);
   intermediate_word.setString("INTERMEDIATE");
-  intermediate_word.setFillColor(sf::Color(250, 190, 47));
+  intermediate_word.setFillColor(sf::Color::Black);
   hard_word.setFont(font);
   hard_word.setString("HARD");
-  hard_word.setFillColor(sf::Color::Red);
+  hard_word.setFillColor(sf::Color::Black);
   //menu_word.setFont(font_num);
   //menu_word.setString("Main Menu");
   //menu_word.setCharacterSize(70);
@@ -181,7 +181,7 @@ int main() {
   restart_word.setFillColor(sf::Color::Red);
   master_timer.setFont(font_num);
   master_timer.setCharacterSize(45);
-  master_timer.setFillColor(sf::Color::White);
+  master_timer.setFillColor(sf::Color::Black);
   master_timer.setString("61");
   REACT.setFont(font_num);
   REACT.setCharacterSize(50);
