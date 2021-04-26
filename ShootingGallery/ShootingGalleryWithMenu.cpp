@@ -99,7 +99,7 @@ int main() {
 
   sf::Clock clock; //Clock that dictates how long the target will last//
   sf::Clock master_time; //Clock that dictates how long the overall game will last//
-  sf::RenderWindow window(sf::VideoMode(800, 720), "Shooting Gallery");
+  sf::RenderWindow window(sf::VideoMode(1280, 720), "Shooting Gallery");
   sf::CircleShape X_Large(radius);
   sf::CircleShape Large(radius*0.75);
   sf::CircleShape Medium(radius*0.5);
@@ -192,7 +192,7 @@ int main() {
 
  
 
-  window.setFramerateLimit(7);
+  window.setFramerateLimit(30);
 
   while (window.isOpen()) {
 
