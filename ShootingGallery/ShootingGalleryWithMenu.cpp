@@ -92,7 +92,7 @@ int main() {
   int radius = 75;
   int score_num = 0;
   float timer = 3;
-  int countdown = 31;
+  int countdown = 61;
   float elapsed = 0;
   float target_count = 0;
   vector<float> storage; //Stores the time the player clicks on the target//
@@ -349,7 +349,7 @@ if (menucase == 7 || menucase == 8 || menucase == 9) {
       if (countdown == 0) {
         while (window.isOpen()) {
         window.clear();
-        countdown = 31;
+        countdown = 61;
         float dummy = score_num;
         float precision = (dummy / (target_count * 1000)) * 100;
         std::ostringstream stream;
